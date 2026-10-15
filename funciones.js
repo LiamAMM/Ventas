@@ -24,3 +24,9 @@ function calcularTotalPagar(monto, interes) {
     var totalPagar = monto + interes + 100;
     return totalPagar;
 }
+
+function calcularCuotaMensual(total, plazoAnios) {
+    var meses = plazoAnios * 12;
+    var cuotaMensual = total / meses;
+    return cuotaMensual;
+}
