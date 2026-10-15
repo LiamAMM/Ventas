@@ -8,9 +8,11 @@ function calcularCredito() {
     var tasa = parseFloat(document.getElementById("txtTasaInteres").value);
     var interes = calcularInteresSimple(monto, tasa, plazo);
     var totalPagar = calcularTotalPagar(monto, interes);
+    var cuotaMensual = calcularCuotaMensual(totalPagar, plazo);
 
     document.getElementById("spnDisponible").innerText = disponible;
     document.getElementById("spnCapacidadPago").innerText = capacidadPago;
     document.getElementById("spnInteresPagar").innerText = interes;
     document.getElementById("spnTotalPrestamo").innerText = totalPagar;
+    document.getElementById("spnCuotaMensual").innerText = cuotaMensual;
 }
