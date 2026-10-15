@@ -9,10 +9,17 @@ function calcularCredito() {
     var interes = calcularInteresSimple(monto, tasa, plazo);
     var totalPagar = calcularTotalPagar(monto, interes);
     var cuotaMensual = calcularCuotaMensual(totalPagar, plazo);
+    var resultadoAprobacion = aprobarCredito(capacidadPago, cuotaMensual);
 
     document.getElementById("spnDisponible").innerText = disponible;
     document.getElementById("spnCapacidadPago").innerText = capacidadPago;
     document.getElementById("spnInteresPagar").innerText = interes;
     document.getElementById("spnTotalPrestamo").innerText = totalPagar;
     document.getElementById("spnCuotaMensual").innerText = cuotaMensual;
+    if (resultadoAprobacion == true) {
+        document.getElementById("spnEstadoCredito").innerText = "CREDITO APROBADO";
+    } 
+    else {
+        document.getElementById("spnEstadoCredito").innerText = "CREDITO RECHAZADO";
+    }
 }

@@ -1,0 +1,9 @@
+Actúa como un diseñador gráfico senior experto en desarrollo Frontend moderno. Necesito que rediseñes por completo el aspecto visual de esta página web para que tenga un enfoque empresarial, profesional, moderno y visualmente muy atractivo (estilo banca moderna). 
+
+Para ello, toma como referencia la identidad visual de una entidad financiera real o ficticia (por ejemplo, un azul corporativo elegante `#0A2540`, acentos en verde esmeralda o turquesa `#00D4B2`, tipografías limpias como Inter o Poppins, sombras suaves tipo glassmorphism sutil y bordes redondeados modernos).
+
+Reglas obligatorias:
+1. Respetar estrictamente todos los id y class actuales del HTML para no romper la funcionalidad o los scripts existentes.
+2. Hacer el diseño 100% responsive (adaptable a móviles, tablets y escritorios mediante CSS).
+3. Añadir micro-interacciones profesionales con CSS (transiciones suaves en botones al hacer hover, sombras elevadas en tarjetas, estados focus limpios en formularios).
+4. Entregar el código CSS completo y estructurado, listo para integrarse.
